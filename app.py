@@ -27,7 +27,7 @@ def detect_objects(image):
 
 def live_camera_detection(stop_event):
     """Perform live camera object detection."""
-    cap = cv2.VideoCapture(0)  # Open webcam
+    cap = cv2.VideoCapture(1)  # Open webcam
     stframe = st.empty()  # Placeholder for live video feed
 
     if cap.isOpened():
